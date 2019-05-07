@@ -18,13 +18,19 @@ button {
   cursor: pointer;
 }
 
+input {
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+
 button p {
   margin: 0;
   display: inline-block;
 }
 
 button:last-of-type {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .results_title {
