@@ -8,12 +8,25 @@ html {
   box-sizing: inherit;
 }
 
-.get-cookies {
+button {
+  display: inline-block;
   background-color: white;
   font-size: 18px;
-  width: 140px;
   height: 50px;
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+
+button p {
+  margin: 0;
+  display: inline-block;
+}
+
+button:last-of-type {
+  margin-left: 30px;
+}
+
+.results_title {
+  font-weight: 400;
 }

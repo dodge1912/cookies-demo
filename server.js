@@ -8,6 +8,7 @@ app.use(express.static('public'));
 
 app.use(function(req, res, next) {
   res.cookie('hello', 'world', {maxAge: 900000, httpOnly: false});
+  console.log(req.cookies); // print cookies received from client
   next();
 });
 
@@ -16,7 +17,7 @@ app.get('*',function (req, res) {
 });
 
 app.get('/', function(req, res) {
-  return res.status(200).send('Cookie sent');
+  return res.status(200);
 });
 
 app.listen(8080);
