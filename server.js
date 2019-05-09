@@ -8,7 +8,11 @@ app.use(express.static('public'));
 
 app.use(function(req, res, next) {
   res.cookie('hello', 'world', {maxAge: 900000, httpOnly: false});
-  console.log(req.cookies); // print cookies received from client
+
+  if (req.cookies) {
+    console.log(req.cookies); // print cookies received from client
+  }
+  
   next();
 });
 
